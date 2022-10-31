@@ -1,3 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-  background-color: aquamarine;
+  background-color: #e5e5e5;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.strong {
+  font-weight: 700;
+}
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px 0px #0000000d;
+  padding: 0px 22px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  background: #e5e5e5;
+  width: 100%;
+
+  top: 106px;
+  position: relative;
+  z-index: 0;
+  overflow-y: scroll;
+}
+
+ion-icon {
+  height: 26px;
+  width: 26px;
+}
+
+input {
+  height: 30px;
+  width: 85vw;
+  color: rgb(0, 0, 0);
+
+  font-size: 18px;
+  font-style: italic;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+li {
+  padding: 0px 9px 0px 9px;
+  margin-bottom: 4px;
+}
+.msgStatus {
+  height: 40px;
+  width: 100%;
+
+  border-radius: 2px;
+  background: #dcdcdc;
+
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+}
+
+.msgPrivada {
+  height: 63px;
+  width: 100%;
+  border-radius: 2px;
+
+  background: #ffdede;
+
+  display: flex;
+  align-items: center;
+
+  line-height: 20px;
+}
+
+.msgPadrao {
+  min-height: 40px;
+  width: 100%;
+  left: 0px;
+  top: 194px;
+  border-radius: 2px;
+
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  line-height: 16px;
+}
+
+.horario {
+  color: #aaaaaa;
+}
+
+footer {
+  background-color: #ffffff;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0px -4px 6px 0px #0000000d;
+
+  position: fixed;
+
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bodyChat {
+  margin-bottom: 81px;
 }

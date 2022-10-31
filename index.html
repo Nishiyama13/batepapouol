@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -12,8 +12,26 @@
 </head>
 
 <body>
+  <header>
+    <img class="logo" src="./assets/image/logo 1.svg" alt="Logo bate papo uol">
+    <img class="icone" src="./assets/image/Vector.svg" alt="">
+  </header>
 
+  <main class="chat">
+    <ul class="bodyChat">
 
+    </ul>
+  </main>
+
+  <footer>
+    <input id='input-msg' class="input-msg" type="text" placeholder="Escreva aqui...">
+    <div class="enviar">
+      <ion-icon onclick="enviarMsg()" name="paper-plane-outline"></ion-icon>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   <script src="./script/script.js"></script>
 </body>
 
