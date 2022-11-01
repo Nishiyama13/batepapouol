@@ -14,7 +14,7 @@
 <body>
   <header>
     <img class="logo" src="./assets/image/logo 1.svg" alt="Logo bate papo uol">
-    <img class="icone" src="./assets/image/Vector.svg" alt="">
+    <img class="icone" data-test="open-participants" src="./assets/image/Vector.svg" alt="idcone">
   </header>
 
   <main class="chat">
@@ -24,8 +24,8 @@
   </main>
 
   <footer>
-    <input id='input-msg' class="input-msg" type="text" placeholder="Escreva aqui...">
-    <div class="enviar">
+    <input id='input-msg' class="input-msg" data-test="input-message" type="text" placeholder="Escreva aqui...">
+    <div class="enviar" data-test="send-message">
       <ion-icon onclick="enviarMsg()" name="paper-plane-outline"></ion-icon>
     </div>
   </footer>

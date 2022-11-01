@@ -59,16 +59,19 @@ function renderizarMenssagem(event) {
   let li = document.createElement("li");
   if (event.type === "status") {
     li.className = "msgStatus";
+    li.setAttribute("data-test", "message"); //teste
     li.innerHTML = ` (${event.time})<strong>${event.from}</strong>&nbsp;${event.text}`;
     chatElement.appendChild(li);
   }
 
   if (event.type === "private_message" && event.to === "Private") {
     li.className = "msgPrivada";
+    li.setAttribute("data-test", "message"); //teste
     li.innerHTML = ` (${event.time})<strong>${event.from}</strong>&nbsp; reservadamente para &nbsp; <strong>${event.to}</strong>:&nbsp; ${event.text}`;
     chatElement.appendChild(li);
   } else if (event.type === "message") {
     li.className = "msgPadrao";
+    li.setAttribute("data-test", "message"); //teste
     li.innerHTML = ` (${event.time})<strong>${event.from}</strong>&nbsp; para&nbsp; <strong>${event.to}</strong>:&nbsp; ${event.text}`;
     chatElement.appendChild(li);
   }
